@@ -1,0 +1,53 @@
+site_name: Григорий GYMович
+site_description: Всякие гайды, идеи, находки, и рецепты
+site_author: Grigorii Based
+site_url: https://docs.grygoriybased.ru/
+
+copyright: Copyright &copy; 2024 <a href="https://t.me/GrigoriyBased">Григорий Базович</a>.
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/mephistiks
+
+repo_url: https://github.com/mephistiks/my-wiki
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tabs
+  language: ru
+  icon:
+    repo: fontawesome/brands/github-alt
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Тёмная тема
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+    # primary: blue grey
+
+plugins:
+    - search
+    - blog
+    
+nav: 
+  - "Главная": index.md
+  - "Гойда": 
+    - "Проекты": projects.md
+    - "Обзоры технологий":
+      - "IDE": review/ide.md
+      - "Работа с докером": review/docker.md
+    - Рецепты:
+      - "Питон в контейнере": recipes/docker-python.md 
+  # - "Блог":
+  #   - "Посты": blog.md
