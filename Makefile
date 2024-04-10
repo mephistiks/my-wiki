@@ -1,5 +1,5 @@
 install:
-	python venv venv
+	python3 venv venv
 	venv/bin/python -m pip install -r r.txt
 
 build:
