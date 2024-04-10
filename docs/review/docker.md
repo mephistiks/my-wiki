@@ -15,3 +15,9 @@ Docker - технология контейнеризации.
 ### Установка
 
 Если целевая система - windows, качаем [тут](https://www.docker.com/products/docker-desktop/)
+
+Для линукса [гайд](https://docs.docker.com/engine/install/ubuntu/) по сложнее, но у меня обычно получается без проблем.
+
+Пользователям мака соболезную.
+
+###

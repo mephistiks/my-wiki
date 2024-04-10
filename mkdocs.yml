@@ -11,8 +11,17 @@ extra:
     - icon: fontawesome/brands/github 
       link: https://github.com/mephistiks
 
-repo_url: https://github.com/mephistiks/my-wiki
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
+repo_url: https://github.com/mephistiks/my-wiki
+repo_name: mephistiks/my-wiki
 theme:
   name: material
   features:
@@ -20,6 +29,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tabs
+    - navigation.indexes
   language: ru
   icon:
     repo: fontawesome/brands/github-alt
@@ -42,12 +52,20 @@ plugins:
     
 nav: 
   - "Главная": index.md
+
   - "Гойда": 
-    - "Проекты": projects.md
+    - "Вэб":
+      - web/index.md
+      - "Виртуальное окружение и зависимости": web/venv_pip.md
+      - "Асинхронное программирование": web/async.md
     - "Обзоры технологий":
+      - review/index.md
       - "IDE": review/ide.md
       - "Работа с докером": review/docker.md
     - Рецепты:
+      - recipes/index.md
       - "Питон в контейнере": recipes/docker-python.md 
+
+  - "Проекты": projects.md
   # - "Блог":
   #   - "Посты": blog.md

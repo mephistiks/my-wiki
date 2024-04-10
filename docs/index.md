@@ -1,2 +1,1 @@
-# Welcome to MkDocs
-
+# Wiki by Григорий Базович
