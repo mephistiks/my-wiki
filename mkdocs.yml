@@ -12,6 +12,8 @@ extra:
       link: https://github.com/mephistiks
 
 markdown_extensions:
+  - toc:
+      permalink: "#"
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -19,9 +21,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 repo_url: https://github.com/mephistiks/my-wiki
 repo_name: mephistiks/my-wiki
+
 theme:
   name: material
   features:
@@ -49,7 +54,8 @@ theme:
 plugins:
     - search
     - blog
-    
+    - autorefs
+
 nav: 
   - "Главная": index.md
 
@@ -57,15 +63,20 @@ nav:
     - "Вэб":
       - web/index.md
       - "Виртуальное окружение и зависимости": web/venv_pip.md
+      - "Конкурентное программирование": web/parallel.md
       - "Асинхронное программирование": web/async.md
     - "Обзоры технологий":
       - review/index.md
       - "IDE": review/ide.md
       - "Работа с докером": review/docker.md
-    - Рецепты:
+    - "Рецепты":
       - recipes/index.md
       - "Питон в контейнере": recipes/docker-python.md 
 
-  - "Проекты": projects.md
+  - "Who am я?": about.md
   # - "Блог":
   #   - "Посты": blog.md
+
+
+
+# https://chat.openai.com/c/32f7f795-427c-4ecf-90fe-039385d94e1c
