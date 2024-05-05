@@ -18,9 +18,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: | 
             cd ~/my-wiki
-            git fetch --all
-            git reset --hard origin/main
-
+            git pull
       - name: build
         uses: appleboy/ssh-action@v1.0.3
         with:
