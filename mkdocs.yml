@@ -12,6 +12,11 @@ extra:
       link: https://github.com/mephistiks
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: "#"
   - pymdownx.highlight:
