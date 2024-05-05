@@ -74,6 +74,7 @@ nav:
       - review/index.md
       - "IDE": review/ide.md
       - "Работа с докером": review/docker.md
+      - "WSL (линукс в винде но без ВМ)": review/wsl.md
     - "Рецепты":
       - recipes/index.md
       - "Питон в контейнере": recipes/docker-python.md 
