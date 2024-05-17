@@ -67,9 +67,11 @@ nav:
   - "Гойда": 
     - "Вэб":
       - web/index.md
+      - "Что такое web": web/network.md
       - "Виртуальное окружение и зависимости": web/venv_pip.md
       - "Конкурентное программирование": web/parallel.md
       - "Асинхронное программирование": web/async.md
+      - "Библиотеки и фреймворки": web/frameworks.md
     - "Обзоры технологий":
       - review/index.md
       - "IDE": review/ide.md

@@ -9,4 +9,4 @@ build:
 	venv/bin/python -m mkdocs build
 
 up:
-	mkdocs serve
+	venv\Scripts\python -m mkdocs serve
